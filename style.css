@@ -1,0 +1,191 @@
+/* || CUSTOM PROPERTIES */
+:root {
+    --clr-primary-dark-cyan: hsl(158, 36%, 37%);
+    --clr-primary-cream: hsl(30, 38%, 92%);
+    --clr-neutral-very-dark-blue: hsl(212, 21%, 14%);
+    --clr-neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --ff-montserrat: 'Montserrat', sans-serif;
+    ;
+    --ff-fraunces: 'Fraunces', serif;
+    ;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+/* || RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    font-family: var(--ff-montserrat);
+    font-size: .9375rem;
+    background-color: var(--clr-primary-cream);
+
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+.flex-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid hotpink; */
+    padding: .5em 0;
+}
+
+.product {
+    display: grid;
+    margin: 1rem;
+    background-color: var(--clr-neutral-white);
+    border-radius: .75rem;
+
+    max-width: 650px;
+}
+
+@media (min-width: 600px) {
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.product__content {
+    display: grid;
+    grid-gap: .75rem;
+    padding: 2rem;
+}
+
+.product__category {
+    font-size: .75em;
+    color: var(--clr-neutral-dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+}
+
+.product__title {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+}
+
+.product__body {
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-dark-grayish-blue);
+}
+
+.product__price {
+    font-family: var(--ff-fraunces);
+    font-size: 1.75rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-dark-cyan);
+}
+
+.product__original-price {
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-bold);
+    font-size: .80em;
+    color: var(--clr-neutral-dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: .45rem;
+    padding: .5em 1.5em;
+    cursor: pointer;
+
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-primary-dark-cyan);
+    color: var(--clr-neutral-white);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.btn::before {
+    content: "";
+    width: 15px;
+    height: 16px;
+    display: block;
+    background-image: url(images/icon-cart.svg);
+}
