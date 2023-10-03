@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot%202023-10-03%20at%2017-10-57%20Frontend%20Mentor%20Product%20preview%20card%20component.pngscreenshot.jpg)
+![](images/Screenshot%202023-10-03%20at%2017-10-57%20Frontend%20Mentor%20Product%20preview%20card%20component.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-productcard-mobilefirst-solution-a4yozpdQQn)
+- Live Site URL: [live site URL here](https://resilient-youtiao-a0edd3.netlify.app/)
 
 ## My process
 
